@@ -178,5 +178,10 @@ class Anemia(FBC):
     def get_pcv(self):
         if self.blood_level_result[0] in range(9, 16):
             print("sever anemia")
+        elif self.blood_level_result[0] in range (16, 25):
+            print("anemis: patient blood level result is low and needs medical attention")
+        elif self.blood_level_result[0] in range (25, 36):
+            print("patient blood level is okay and awithin the normal range.")
+
 
 
